@@ -48,7 +48,7 @@ public class Counselling {
                 {
                     
                    }
-                break;
+                
 
             }
         }while(choice != 5);
