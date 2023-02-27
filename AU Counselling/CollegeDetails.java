@@ -88,8 +88,8 @@ class CollegeDetails {
             no++;
         }
 
-        boolean lo = true;
-        while (lo!=false) {
+        boolean b1 = true;
+        while (b1!=false) {
 
             System.out.println("Enter The Serial Number of the Collage you want to choose : ");
             int num = in.nextInt();
@@ -103,7 +103,7 @@ class CollegeDetails {
                 college.replace(col,avail-1);
                 finalised.put(roll,col);
                 System.out.println("College Selected Successfully!!!!");
-                lo = false;
+                b1 = false;
             }
         }
     }

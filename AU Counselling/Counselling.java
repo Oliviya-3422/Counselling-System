@@ -11,7 +11,7 @@ public class Counselling {
         Student classObject=new Student(null, null, 0, 0);
         classObject.printStudent();
         ArrayList<Student>students = new ArrayList<>();
-        // Map<String,Student> students=new HashMap<>();
+        //Map<String,Student> students=new HashMap<>();
 
         CollegeDetails view = new CollegeDetails();
 
