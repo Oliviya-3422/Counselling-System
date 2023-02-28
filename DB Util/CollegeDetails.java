@@ -161,6 +161,7 @@ class CollegeDetails {
     void view_normal(ArrayList<Student> students) {
        
         Collections.sort(students, Comparator.comparing(Student::getCutOff).reversed());
+        
         for (Student student : students) {
 
             System.out.println();

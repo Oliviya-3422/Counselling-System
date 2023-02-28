@@ -15,7 +15,7 @@ public class Counselling {
 
         CollegeDetails view = new CollegeDetails();
 
-        students.add(new Student("001", "Jency", 563, 98.1f));
+        students.add(new Student("1", "Jency", 563, 98.1f));
         students.add(new Student("002", "Suresh", 587, 95.4f));
         students.add(new Student("003", "Bala", 547, 90.4f));
 
