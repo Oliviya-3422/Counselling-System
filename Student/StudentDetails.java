@@ -46,10 +46,7 @@ class StudentDetails {
                 if (addNew.equalsIgnoreCase("Y")) {
                     add(students);
 
-                } else {
-                    System.out.println("Thank you for using the portal.... :)");
-                    System.exit(0);
-                }
+                } 
 
             }
 

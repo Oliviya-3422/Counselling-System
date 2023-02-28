@@ -108,7 +108,7 @@ class CollegeDetails {
         }
     }
 
-    void view(ArrayList<Student> students){
+   /*  void view(ArrayList<Student> students){
     
         System.out.println("Please Enter your Roll no:");
 
@@ -157,9 +157,9 @@ class CollegeDetails {
         System.out.println("|------------------------------------------------------|");
 
    
-    }
+    }*/
     void view_normal(ArrayList<Student> students) {
-        // des
+       
         Collections.sort(students, Comparator.comparing(Student::getCutOff).reversed());
         for (Student student : students) {
 
@@ -177,5 +177,8 @@ class CollegeDetails {
             System.out.println();
         }
 
+    }
+
+    public void view(ArrayList<Student> students) {
     }
 }
