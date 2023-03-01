@@ -12,12 +12,12 @@ class StudentDetails {
 
     void add(ArrayList<Student> students) {
         // ArrayList<Student> adds= new ArrayList<>();
-        System.out.println("Please enter student Roll no:");
+        System.out.println("Please enter student Roll no :");
         rollNo = in.next();
-        System.out.println("Please Enter student name:");
+        System.out.println("Please Enter student name :");
         name = in.next();
 
-        System.out.println("if you know your total and cuttoff(Y/N):");
+        System.out.println("if you know your total and cuttoff(Y/N) :");
         System.out.println("Enter your choice");
         String choice = in.next().toUpperCase();
         // System.out.println(choice);
@@ -30,12 +30,12 @@ class StudentDetails {
             cutOff = in.nextFloat();
 
             students.add(new Student(rollNo, name, total, cutOff));
-            System.out.println("Successfully added to the portal");
+            System.out.println("Successfully added");
             System.out.println("Do you want to see the college assigned for you(Y/N):");
             String choice1 = in.next().toUpperCase();
 
             if (choice1.equals("Y")) {
-                CollegeDetails view = new CollegeDetails();
+                AUCounselling view = new AUCounselling();
                 view.view(students);
 
             } else {
@@ -58,37 +58,37 @@ class StudentDetails {
             // }
 
         } else {
-            System.out.println("Please Enter your language Mark:");
+            System.out.println("Please Enter your language Mark :");
             int language = in.nextInt();
-            System.out.println("Please Enter your english:");
+            System.out.println("Please Enter your english :");
             int eng = in.nextInt();
-            System.out.println("please Enter your maths:");
-            int math = in.nextInt();
-            System.out.println("please enter your subject-1:");
-            int sub_1 = in.nextInt();
-            System.out.println("please enter your subject-2");
-            int sub_2 = in.nextInt();
-            System.out.println("please enter your subject-3");
-            int sub_3 = in.nextInt();
-            total = language + eng + math + sub_1 + sub_2 + sub_3;
+            System.out.println("please Enter your maths :");
+            int Maths = in.nextInt();
+            System.out.println("please enter your Chemistry :");
+            int Chemistry = in.nextInt();
+            System.out.println("please enter your Physics :");
+            int Physics = in.nextInt();
+            System.out.println("please enter your subject-3 :");
+            int sub3 = in.nextInt();
+            total = language + eng + Maths + Chemistry + Physics + sub3;
 
-            float maths = math / 2;
-            float chem = sub_1 / 4;
-            float phy = sub_2 / 4;
+            float math = Maths / 2;
+            float chem = Chemistry / 4;
+            float phy = Physics / 4;
 
-            cutOff = maths + chem + phy;
+            cutOff = math + chem + phy;
             students.add(new Student(rollNo, name, total, cutOff));
             System.out.println("Successfully added");
-            System.out.println("If you want to see the cutoff marks of the students (Y/N):");
+            System.out.println("If you want to see the cutoff marks of the students (Y/N) :");
             String choice1 = in.next().toUpperCase();
             if (choice1.equals("Y")) {
-                CollegeDetails view = new CollegeDetails();
+                AUCounselling view = new AUCounselling();
                 view.view_normal(students);
                 // view_portal view =new view_portal();
                 // view.view(students);
 
             } else {
-                System.out.println("Add one more student (Y/N):");
+                System.out.println("Add one more student (Y/N) :");
                 System.out.println("Enter your choice");
                 String addNew = in.next().toUpperCase();
 
@@ -105,5 +105,20 @@ class StudentDetails {
 
         }
 
+    }
+
+
+
+    public void available_college() {
+    }
+
+
+
+    public void select(ArrayList<Student> students) {
+    }
+
+
+
+    public void choosed() {
     }
 }

@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -6,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-class CollegeDetails {
+class AUCounselling {
     static Scanner in = new Scanner(System.in);
 
     static HashMap<String,Integer> college = new HashMap<>();
@@ -38,7 +37,7 @@ class CollegeDetails {
         while(i!=0){
             System.out.println("Enter the College Name : ");
             String name = in.nextLine();
-            System.out.println("Enter the Department: ");
+            System.out.println("Enter the Department : ");
             String dept = in.nextLine();
            
            

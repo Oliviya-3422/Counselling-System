@@ -2,26 +2,23 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Counselling {
-   
-         
     static Scanner in = new Scanner(System.in);
-    
 
     public static void main(String[] args) {
-        Student classObject=new Student(null, null, 0, 0);
-        classObject.printStudent();
-        ArrayList<Student>students = new ArrayList<>();
-        //Map<String,Student> students=new HashMap<>();
+        ArrayList<Student> students = new ArrayList<>();
+        // Map<String,Student> students=new HashMap<>();
 
-        CollegeDetails view = new CollegeDetails();
+        AUCounselling view = new AUCounselling();
 
-        students.add(new Student("1", "Jency", 563, 98.1f));
+        students.add(new Student("001", "Jency", 563, 98.1f));
         students.add(new Student("002", "Suresh", 587, 95.4f));
         students.add(new Student("003", "Bala", 547, 90.4f));
+        students.add(new Student("004","Snekha",590,97.2f));
+        students.add(new Student("005","Shree Hari",596,97.1f));
 
         int choice;
         do {
-            System.out.println("\t1.Add Students \n\t2.Add College \n\t3.Select College\n\t4.Show Student's Selected College\n\t5.EXIT\nPlease enter your choice:");
+            System.out.println("\t1.Add Students \n\t2.Add College \n\t3.Select College\n\t4.Show Students Selected College\n\t5.EXIT\nPlease enter your choice :");
             choice = in.nextInt(); // Input
             switch (choice) {
                 case 1:
@@ -41,14 +38,9 @@ public class Counselling {
 
                 case 5:
                     break;
-
-               default:
-                System.out.println("Enter a valid choice:");
-                for(int i=1 ;i<=5;i++)
-                {
-                    
-                   }
-                
+                default:
+                    System.out.println("Enter a valid choice:");
+                   for(int i=1;i<=5;i++);
 
             }
         }while(choice != 5);
