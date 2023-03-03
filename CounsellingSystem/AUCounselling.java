@@ -61,7 +61,7 @@ class AUCounselling {
 
         System.out.println("Enter Your Roll Number : ");
         String roll = in.next();
-        int t =0;
+        int t=0;
 
         for(Student student : students) {
             t++;
