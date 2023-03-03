@@ -11,6 +11,7 @@ class StudentDetails {
 
 
     void add(ArrayList<Student> students) {
+        
         // ArrayList<Student> adds= new ArrayList<>();
         System.out.println("Please enter student Roll no :");
         rollNo = in.next();

@@ -71,7 +71,7 @@ class AUCounselling {
             }
         }
 
-        System.out.println(college.size()+" "+t);
+        // System.out.println(college.size()+" "+t);
 
         int no = 1;
         for (Map.Entry<String, Integer> get : college.entrySet()) {
